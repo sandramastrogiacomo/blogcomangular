@@ -1,5 +1,11 @@
-@media screen and (max-width:600px) {
-  .container__menu-title > h1{
-    font-size: 30px;
+@media (max-width: 768px) {
+  .container__menu-title > h1 {
+    font-size: 60px;
+    gap: 10px;
+  }
+
+  .container__menu-title > h1 > img {
+    width: 40px;
+    height: 40px;
   }
 }

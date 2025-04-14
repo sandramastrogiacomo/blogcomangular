@@ -2,21 +2,24 @@
 
   <div class="big-card__photo">
     <img
-      src="{{ photoCover }}"
-      alt=""
-      height="200px"
-      srcset=""
-    >
+      [src]="photoCover"
+      [alt]="cardTitle"
+      loading="lazy"
+    />
   </div>
 
   <div class="big-card__title">
-    <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
+    <h1>
+      <a [routerLink]="['/content', Id]">
+        {{ cardTitle }}
+      </a>
+    </h1>
   </div>
 
   <div class="big-card__description">
     <p>
-      <a [routerLink]="['content', Id]">
-          {{ cardDescription }}
+      <a [routerLink]="['/content', Id]">
+        {{ cardDescription }}
       </a>
     </p>
   </div>

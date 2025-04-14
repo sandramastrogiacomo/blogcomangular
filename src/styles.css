@@ -1,14 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  background-color: #111111;
-  color:white;
-  font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+
+:root {
+  --primary-color: #2d2d2d;
+  --accent-color: #f76c6c;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --highlight-color: #ffe8cc;
+  --header-font: 'Merriweather', serif;
+  --body-font: 'Open Sans', sans-serif;
 }
 
-a{
-  text-decoration: none;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+
+.intro__text {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--highlight-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.intro__text h1 {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.intro__text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+
+.container__articles {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.articles__main,
+.articles__others {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container__articles {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .intro__text h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro__text p {
+    font-size: 1rem;
+  }
 }

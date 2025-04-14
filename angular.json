@@ -19,9 +19,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/favicon-sandra.ico",
               "src/assets"
             ],
+
             "styles": [
               "src/styles.css"
             ],
